@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>司法大数据自动化标注与分析</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../node_modules/layui/src/css/layui.css" type="text/css">
+</head>
+
+<script src="../node_modules/layui/src/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function () {
+        var layer = layui.layer, form = layui.form;
+
+        layer.msg('司法大数据自动化标注与分析');
+    });
+
+    layui.use('element', function () {
+        var $ = layui.jquery
+            , element = layui.element; // Tab的切换功能，切换事件监听等，需要依赖element模块
+
+        $('.site-demo-active').on('click', function () {
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+
+    });
+</script>
+
+<body>
+    <div class="first">
+        <div>
+            <i id="icon" class="layui-icon layui-icon-next"></i>
+        </div>
+
+        <div>
+            <label for="load" id="loadLabel">导入案例文件</label>
+            <input accept=".txt" id="load" type="file" />
+        </div>
+
+        <div>
+            <label for="display"></label>
+            <textarea id="display" name="display" rows="12" cols="200"></textarea>
+        </div>
+
+        <div>
+            <!--- 注册点击事件，调用发送函数 --->
+            <button class="layui-btn layui-btn-primary" onclick="sendContent()">上传至服务器</button>
+        </div>
+    </div>
+
+
+    <div class="second">
+
+        <div>
+            <button class="layui-btn layui-btn-primary" onclick="sendGenerateRequest()" id="generate">保存案件与标注</button>
+        </div>
+
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">当事人</li>
+                <li>性别</li>
+                <li>民族</li>
+                <li>出生地</li>
+                <li>案由</li>
+                <li>相关法院</li>
+            </ul>
+            <div id="content" class="layui-tab-content">
+                <div id="content1" class="layui-tab-item layui-show"></div>
+                <div id="content2" class="layui-tab-item"></div>
+                <div id="content3" class="layui-tab-item"></div>
+                <div id="content4" class="layui-tab-item"></div>
+                <div id="content5" class="layui-tab-item"></div>
+                <div id="content6" class="layui-tab-item"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="jquery-3.6.0.js"></script>
+<script src="communication.js"></script>
+<script src="load.js"></script>
+
+</html>
