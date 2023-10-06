@@ -24,23 +24,23 @@ CSS: https://www.bilibili.com/video/BV1YJ411a7dy
 >
 > **Deprecated**
 
-[Javascript 读写文件](https://cloud.tencent.com/developer/article/1392736)
+https://cloud.tencent.com/developer/article/1392736
 
 
 
 ## Node.js 服务器端
 
-[使用nodejs搭建服务器显示HTML页面](https://www.jianshu.com/p/edce7af3691a)
+https://www.jianshu.com/p/edce7af3691a
 
-[【网络】如何使用JavaScript实现客户端与服务器的websocket通信？](https://zhuanlan.zhihu.com/p/97336307)
+https://zhuanlan.zhihu.com/p/97336307
 
 
 
 ## 在网页中读取本地文件
 
-[在web应用程序中使用文件 - Web API 接口参考 | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/API/File/Using_files_from_web_applications)
+https://developer.mozilla.org/zh-CN/docs/Web/API/File/Using_files_from_web_applications
 
-[在网页中读取本地文件](https://zhuanlan.zhihu.com/p/50063001)
+https://zhuanlan.zhihu.com/p/50063001
 
 
 
@@ -48,13 +48,13 @@ CSS: https://www.bilibili.com/video/BV1YJ411a7dy
 
 > **Deprecated**
 
-[web前端可以生成文件并保存在前端文件夹中吗](https://www.zhihu.com/question/420002222/answer/1462207254)
+https://www.zhihu.com/question/420002222/answer/1462207254
 
 
 
 ## 分词
 
-[yanyiwu/nodejieba](https://github.com/yanyiwu/nodejieba)
+https://github.com/yanyiwu/nodejieba
 
 
 
@@ -80,30 +80,30 @@ CSS: https://www.bilibili.com/video/BV1YJ411a7dy
 
 ## 标签页切换
 
-[web前端中实现多标签页切换的效果](https://www.cnblogs.com/yuershuo/p/5699570.html)
+https://www.cnblogs.com/yuershuo/p/5699570.html
 
 
 
 ## 生成文件 后端
 
-[使用 Node.js 写入文件](http://nodejs.cn/learn/writing-files-with-nodejs)
+http://nodejs.cn/learn/writing-files-with-nodejs
 
 
 
 ## JQuery
 
-即时读取`textarea`中的内容
+即时读取 `textarea` 中的内容
 
 
 
 ## 通信约定
 
 - 服务器 -> 浏览器
-  - 以`noun`或`verb`开头，为分词列表
+  - 以 `noun` 或 `verb` 开头，为分词列表
   - 否则为文件成功生成的提示信息
 - 浏览器 -> 服务器
-  - 以`TAGINFO: `开头，为标注信息
-  - 以`TEXT: `开头，为案件文本（分词后）
+  - 以 `TAGINFO: ` 开头，为标注信息
+  - 以 `TEXT: ` 开头，为案件文本（分词后）
   - 否则为案件文本（分词前）
 
 
